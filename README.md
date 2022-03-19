@@ -16,10 +16,10 @@ so if it's redirected to a file, `wunzip.cpp` will not function as intended.
 ## Limits
 
 **Advantages:** 
-    Not checking file existance results in a faster program. Having to check if the files exist
-    in the main thread, or opening all the files in the main thread first, would not take advantage
-    of multi-threaded programing. The quicker the main thread creates the 'child' threads, the 
-    faster the overall program will run (including open file operations).
+	    Not checking file existance results in a faster program. Having to check if the files exist
+	    in the main thread, or opening all the files in the main thread first, would not take advantage
+	    of multi-threaded programing. The quicker the main thread creates the 'child' threads, the 
+	    faster the overall program will run (including open file operations).
 
 **Disadvantages:** 
 - The program is bottlenecked by the synchronized output of the threads.
