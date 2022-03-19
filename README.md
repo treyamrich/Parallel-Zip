@@ -29,8 +29,7 @@ so if it's redirected to a file, `wunzip.cpp` will not function as intended.
 - Program cannot handle large amounts of file due to use of **STL Vector**
 - Threads only print 5 bytes at a time
 
-**Solutions**
-Addressing the disadvantages above
+**Solutions:** Addressing the disadvantages above
 - Instead of synchronizes threads to print to `stdout`, have threads put output into another buffer then print it all at the end
 - Remove packing to prevent excess bytes being stored in the **struct** `zdata`
 - Change the write to be the entire buffer size instead of 5 bytes at a time
