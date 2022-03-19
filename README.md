@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The purpose of `pzip.cpp` was to learn how to solve the producer-consumer with an **unbounded
+The purpose of `pzip.cpp` was to learn how to solve the **producer-consumer** with an **unbounded
 buffer problem**. The program built upon `wzip.cpp` from a previous project, by adding multi-threading to
 zip the files in parallel. Another goal of this program was to learn how to synchronize threads,
 using **Semaphores** and **Mutexs**, to output zipped data in the same order as the files that were passed.
